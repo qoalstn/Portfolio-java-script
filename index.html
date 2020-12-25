@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,19 +9,20 @@
   <meta name="author" content="Aria">
   <script src="https://kit.fontawesome.com/638b7c6ceb.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
-<link rel="icon" type="image/png" href="images/favicon.png">
-
-<link rel="stylesheet" href="style.css">
-<script src="main.js" defer></script>
-</head>
-<body>
- <!-- Navbar -->
-  <nav id="navbar">
-  <div class="navbar__logo">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/png" href="images/favicon.png">
-  <a href="#">Aria</a>
-  </div>
+
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="navbar__logo">
+      <link rel="icon" type="image/png" href="images/favicon.png">
+      <a href="#">Aria</a>
+    </div>
     <ul class="navbar__munu">
       <li class="navbar__menu_item">Home</li>
       <li class="navbar__menu_item">About</li>
@@ -34,10 +36,10 @@
   <!-- Home -->
   <section id="home">
     <img src="images/main_image.jpg" alt="Aria's profile" class="home__profile">
-  <h1 class="home__title">Hello, <br/> World</h1>
-  <h2 class="description">world best soft engineer</h2>
-  <button class="home__contact">con</button> 
-</section>
+    <h1 class="home__title">Hello, <br /> World</h1>
+    <h2 class="description">world best soft engineer</h2>
+    <button class="home__contact">con</button>
+  </section>
 
   <!-- about -->
   <section id="about">
@@ -81,7 +83,8 @@
   <section id="skills">
     <h1>Skills</h1>
     <h2>Skills & Attributes</h2>
-    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae rerum, sit voluptates hic consequuntur, laborum ut aperiam in eaque fugiat, nobis optio vitae totam placeat repellat vel id omnis culpa.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae rerum, sit voluptates hic consequuntur, laborum
+      ut aperiam in eaque fugiat, nobis optio vitae totam placeat repellat vel id omnis culpa.</p>
     <div class="skillset">
       <div class="skillset__left">
         <h3 class="skillset__title">Skills</h3>
@@ -168,10 +171,26 @@
     </div>
 
   </section>
-  
+
 
   <!-- work -->
-  <section id="work"></section>
+  <section id="work">
+    <h1>My work</h1>
+    <h3>Projects</h3>
+    <div class="work__categories">
+      <button class="category__btn">All <span class="category__dount">8</span></button>
+      <button class="category__btn">Front-ends <span class="category__dount">8</span></button>
+      <button class="category__btn">Back-end <span class="category__dount">8</span></button>
+      <button class="category__btn">Mobile <span class="category__dount">8</span></button>
+    </div>
+    <a href="https://github.com/qoalstn/Portfolio" class="project" target="blank">
+      <img class="project__img" src="images/work.jpg" alt="work_1">
+      <div class="project__description">
+        <h3>work space</h3>
+        <span>work description</span>
+      </div>
+    </a>
+  </section>
 
   <!-- testimonials -->
   <section id="testimonials"></section>
@@ -179,4 +198,5 @@
   <!-- contact -->
   <section id="contact"></section>
 </body>
+
 </html>
