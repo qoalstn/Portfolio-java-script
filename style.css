@@ -67,6 +67,12 @@ h3 {
   margin: 4px 0px;
 }
 
+button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
 /* navbar */
 #navbar {
   width: 100%;
@@ -124,7 +130,31 @@ h3 {
 }
 
 /* home */
+
+#home {
+  background: url("images/homebackground.png") center/cover no-repeat;
+  padding: 40px;
+  text-align: center;
+}
+
 .home__profile {
-  width: 30%;
-  height: 30%;
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  border: 2px solid var(--color-light-white);
+}
+
+.home__title,
+.description {
+  color: var(--color-white);
+}
+
+.home__contact {
+  font-size: var(--font-regular);
+  font-weight: var(--weight-semi-bold);
+  margin: 24px;
+  padding: 8px 12px;
+  color: var(--color-white);
+  border: 2px solid var(--color-white);
+  border-radius: var(--size-border-radius);
 }
