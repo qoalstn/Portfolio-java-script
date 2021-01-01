@@ -1,5 +1,9 @@
 /* global */
 body {
+  margin: 0px;
+  cursor: default;
+  font-family: "Open Sans", sans-serif;
+
   /* color */
   --color-white: #ffffff;
   --color-light-white: #eeeeee;
@@ -26,6 +30,7 @@ body {
   --weight-regular: 400;
 
   /* Size */
+  --size-border-radius: 7px;
 }
 
 /* Universal tags*/
@@ -60,4 +65,66 @@ h3 {
   font-weight: var(--weight-regular);
   color: var(--color-black);
   margin: 4px 0px;
+}
+
+/* navbar */
+#navbar {
+  width: 100%;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--color-pink);
+  color: var(--color-white);
+  padding: 0px 16px;
+  font-size: var(--font-medium);
+  font-weight: var(--weight-semi-bold);
+}
+
+.navbar__logo {
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  width: 140px;
+}
+
+.favicon {
+  width: 30px;
+  height: 30px;
+  line-height: 100px;
+  margin-right: 20px;
+}
+
+.navbar__name {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: var(--font-large);
+}
+.navbar__munu {
+  display: inline-block;
+  display: flex;
+  margin-right: 0px;
+}
+
+.navbar__menu_item {
+  list-style: none;
+  padding: 7px;
+  margin-right: 30px;
+}
+
+.navbar__menu_item:hover {
+  cursor: pointer;
+  background-color: var(--color-dark-pink);
+  border-radius: var(--size-border-radius);
+}
+
+.navbar__menu_item.active {
+  border: 1px solid var(--color-white);
+  border-radius: var(--size-border-radius);
+}
+
+/* home */
+.home__profile {
+  width: 30%;
+  height: 30%;
 }
