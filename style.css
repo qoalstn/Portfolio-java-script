@@ -108,11 +108,18 @@ a {
   height: 55px;
   display: flex;
   justify-content: center;
-  background-color: var(--color-pink);
+  position: fixed;
   color: var(--color-white);
+  background-color: transparent;
   padding: 0px 16px;
   font-size: var(--font-small);
   font-weight: var(--weight-semi-bold);
+}
+
+.navbar.navbar--dark {
+  background-color: var(--color-pink);
+  transition: all var(--annimation-duration) ease-in-out;
+  z-index: 1;
 }
 
 .navbar__logo {
@@ -171,7 +178,7 @@ a {
 
 #home {
   background: url("images/homebackground.png") center/cover no-repeat;
-  padding: 40px;
+  padding: 90px;
   text-align: center;
 }
 
