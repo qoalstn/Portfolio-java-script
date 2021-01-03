@@ -28,7 +28,7 @@ navbarMenu.addEventListener("click", (event) => {
 
 //handle click on "contact me" button on home
 const toContact = document.querySelector(".home__contact");
-toContact.addEventListener("click", (event) => {
+toContact.addEventListener("click", () => {
   scrollIntoView("#contact");
 });
 
@@ -38,6 +38,21 @@ const homeHeight = home.getBoundingClientRect().height;
 document.addEventListener("scroll", () => {
   // console.log(1 - homeHeight / window.scrollY);
   home.style.opacity = 1 - window.scrollY / homeHeight;
+});
+
+//Handle click on the "arrow up" button
+const toTop = document.querySelector(".scrollToTop");
+toTop.addEventListener("click", (event) => {
+  scrollIntoView("#home");
+});
+
+//show "arrow up" button when scrolling down
+document.addEventListener("scroll", () => {
+  if (homeHeight < window.scrollY / 2) {
+    toTop.classList.add("visibleToTop");
+  } else {
+    toTop.classList.remove("visibleToTop");
+  }
 });
 
 function scrollIntoView(selector) {

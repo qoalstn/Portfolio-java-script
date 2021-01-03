@@ -204,12 +204,27 @@ a {
   border: 2px solid var(--color-white);
   border-radius: var(--size-border-radius);
 }
-
+/* 
 #home.home-opacity {
   opacity: 0.7;
   transition: all var(--annimation-duration) ease;
+} */
+
+.scrollToTop {
+  position: fixed;
+  font-size: 35px;
+  right: 20px;
+  top: 630px;
+  color: var(--color-dark-grey);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity var(--annimation-duration) ease-in;
 }
 
+.scrollToTop.visibleToTop {
+  pointer-events: painted;
+  opacity: 1;
+}
 /* about */
 
 .about__majors {
