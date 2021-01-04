@@ -388,7 +388,7 @@ a {
   margin-left: 20px;
 }
 
-.category__btn.active,
+.category__btn.selected,
 .category__btn:hover {
   background-color: var(--color-dark-pink);
 }
