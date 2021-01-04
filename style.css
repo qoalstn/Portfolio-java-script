@@ -120,6 +120,7 @@ a {
   background-color: var(--color-pink);
   transition: all var(--annimation-duration) ease-in-out;
   z-index: 1;
+  height: 60px;
 }
 
 .navbar__logo {
@@ -141,7 +142,7 @@ a {
   color: var(--color-white);
   font-size: var(--font-large);
 }
-.navbar__munu {
+.navbar__menu {
   display: flex;
   margin-right: 0px;
   padding: 0px;
@@ -149,8 +150,8 @@ a {
 }
 
 .navbar__menu_item {
-  padding: 5px;
-  margin-right: 30px;
+  padding: 5px 15px;
+  margin: 5px 4px;
 }
 
 .navbar__menu_item:hover {
@@ -160,12 +161,14 @@ a {
 }
 
 .navbar__menu_item.active {
+  padding: 5px 15px;
+  margin: 5px 4px;
   border: 1px solid var(--color-white);
   border-radius: var(--size-border-radius);
 }
 
 .navbar__toggleButton {
-  position: absolute;
+  position: fixed;
   top: 10px;
   right: 10px;
   font-size: 30px;
@@ -549,33 +552,41 @@ a {
 
 @media screen and (max-width: 768px) {
   .navbar__toggleButton {
+    position: fixed;
     display: block;
+    z-index: 2;
   }
 
   .navbar {
     display: block;
-    height: 300px;
   }
   .navbar__container {
     width: 100%;
     align-items: flex-start;
     flex-direction: column;
+    background-color: var(--color-pink);
+    border-radius: 8px;
   }
 
-  .navbar__munu {
+  .navbar__menu {
     flex-direction: column;
     width: 100%;
     text-align: center;
+    display: none;
   }
 
-  .navbar__menu_item {
+  .navbar__menu.open {
+    display: block;
+  }
+
+  .navba .navbar__menu_item {
     margin: 0px;
-    width: 80%;
+    width: 100%;
   }
 
   .navbar__menu_item:hover {
     margin: 0px;
-    width: 80%;
+    width: 100%;
     background-color: var(--color-dark-pink);
   }
 
